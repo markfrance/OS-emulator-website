@@ -1,6 +1,5 @@
  var maxZ = 0;
 
-
 function dragMoveListener (event) {
     var target = event.target,
         // keep the dragged position in the data-x/data-y attributes
@@ -51,4 +50,34 @@ interact('.resize-drag')
 
     target.setAttribute('data-x', x);
     target.setAttribute('data-y', y);
+  });
+  
+  $(document).ready(function()
+  {
+	  $(".my-documents-window").hide();
+	  $(".my-computer-window").hide();
+	  $(".start-menu").hide();
+	  
+	 $(".close").click(function(){
+		 $(this).parent().parent().hide();
+		 });
+	
+	
+	$(".my-documents-icon").click(function()
+	{
+		$(".my-documents-window").show();
+	});
+	
+	$(".my-computer-icon").click(function()
+	{
+		$(".my-computer-window").show();
+	});
+	
+	$(".start-button").click(function(){
+		$(".start-menu").toggle();
+	});
+	
+	$(".desktop").click(function(){
+		$(".start-menu").hide();
+	});
   });
