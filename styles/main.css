@@ -5,7 +5,12 @@ body{
 
 }
 
-
+.splash{
+	width:500px;
+	height:500px;
+	background-color:#D4D0C8;
+	margin:auto;
+}
 .resize-drag {
 	
   border:2px solid black;
@@ -24,18 +29,18 @@ body{
   width:400px;
  position:absolute;
 
-
   /* This makes things *much* easier */
   box-sizing: border-box;
 }
 
 .header{
 	border:1px solid black;
-	background-color: #29e;
+	background-color: #083c8e;
 	padding:5px;
 	font-size:14px;
 	height:25px;
 }
+
 .resize-container {
   width: 100%;
   height: 240px;
@@ -43,7 +48,7 @@ body{
 
 .close{
 	border:1px solid black;
-	background-color:red;
+	background-color:#D4D0C8;
 	color:white;
 	width:15px;
 	height:15px;
@@ -56,6 +61,7 @@ body{
 	width:100px;
 	height:100px;
 	position:relative
+	font-size:12px;
 }
 
 .icon-image{
@@ -64,9 +70,20 @@ body{
 	margin:auto;
 }
 
+.window-icon{
+	margin-top:10px;
+	float:left;
+}
+
 .icon-description{
 	color:white;
 	text-align:center;
+}
+
+.window-icon-description{
+	color:black;
+	text-align:center;
+	font-size:12px;
 }
 
 
@@ -124,7 +141,7 @@ body{
 .menu-description{
 	width:100px;
 	float:left;
-	padding:20px;
+	padding:5px;
 }
 
 .menu-item:hover{

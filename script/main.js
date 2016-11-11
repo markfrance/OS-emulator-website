@@ -54,6 +54,16 @@ interact('.resize-drag')
   
   $(document).ready(function()
   {
+	  $(".splash").hide();
+	  
+	  // $(".desktop").hide();
+	  
+	  // setTimeout(function(){
+		// $(".desktop").show();
+		// $(".splash").hide();
+		// }, 2000);
+	  
+	  
 	  $(".my-documents-window").hide();
 	  $(".my-computer-window").hide();
 	  $(".start-menu").hide();
@@ -71,6 +81,11 @@ interact('.resize-drag')
 	$(".my-computer-icon").click(function()
 	{
 		$(".my-computer-window").show();
+	});
+	
+	$(".recycle-bin-icon").click(function()
+	{
+		$(".recycle-bin-window").show();
 	});
 	
 	$(".start-button").click(function(){
